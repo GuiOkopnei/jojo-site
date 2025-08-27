@@ -1,0 +1,89 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Honk&family=Outfit:wght@100..900&display=swap");
+
+.outfit {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+
+body {
+	background-image: url(img/20a943993fcf2f0dc6a94cb738c39c29.jpg);
+	max-width: 100vw;
+	min-height: 100dvh;
+}
+
+header {
+	text-align: center;
+	background-color: rebeccapurple;
+	color: white;
+	padding: 25px;
+}
+
+aside {
+	width: 40%;
+	height: 100vh;
+	background-color: rgb(214, 186, 0);
+}
+
+.pinto {
+	background-color: rgb(7, 0, 76);
+	color: white;
+	border: rgb(0, 1, 44) 4px solid;
+	border-radius: 15px;
+	padding: 1em;
+}
+
+main {
+	display: flex;
+}
+
+#conteudo-principal {
+	flex-grow: 1;
+	margin-top: 30px;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	text-align: justify;
+}
+
+.container-img {
+	display: block;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+
+.container-img > .img-importante {
+	background-color: white;
+	border-radius: 1em;
+	width: 260px;
+	border: 1px lightgray solid;
+	overflow: hidden;
+}
+
+.img-importante > img {
+	object-fit: cover;
+}
+
+.img-importante > p {
+	color: black;
+	padding: 1em;
+	text-align: center;
+}
+
+.img-texto {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.conteudos-textos {
+	display: flex;
+	gap: 1em;
+}
+
+.img-importante:hover {
+	transition: 200ms;
+	box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
+	transform: scale(102%);
+}
