@@ -1,6 +1,11 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Honk&family=Outfit:wght@100..900&display=swap");
 
+*::selection {
+	background: rgb(165, 72, 231);
+	color: #ffffff;
+}
+
 .outfit {
 	font-family: "Outfit", sans-serif;
 	font-optical-sizing: auto;
@@ -8,10 +13,11 @@
 	font-style: normal;
 }
 
-body, html {
+body,
+html {
 	height: 100%;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -28,10 +34,10 @@ header {
 }
 
 aside {
-    width: 20vw;       
-    height: 100vh;            
-    background-color: rgb(214, 186, 0); 
-    position: relative;       
+	width: 20vw;
+	height: 100vh;
+	background-color: rgb(214, 186, 0);
+	position: relative;
 }
 
 .pinto {
@@ -40,6 +46,14 @@ aside {
 	border: rgb(0, 1, 44) 4px solid;
 	border-radius: 15px;
 	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.pinto > section > h2 {
+	/* background-color: red; */
+	margin-bottom: 0.5em;
 }
 
 main {
@@ -55,18 +69,19 @@ main {
 	text-align: justify;
 }
 
-
-
 .container-img {
 	display: block;
 	flex-wrap: wrap;
 	gap: 2em;
+	float: right;
+	padding: 1em;
+	width: 25vw;
 }
 
 .container-img > .img-importante {
 	background-color: white;
 	border-radius: 1em;
-	width: 260px;
+	width: 100%;
 	border: 1px lightgray solid;
 	overflow: hidden;
 }
@@ -88,9 +103,8 @@ main {
 }
 
 .conteudos-textos {
-	display: flex;
+	display: block;
 	gap: 1em;
-	
 }
 
 .img-importante:hover {
@@ -100,7 +114,17 @@ main {
 }
 
 .conteudos-textos h2 {
-    text-align: center;
-    margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
 	display: block;
+}
+
+#navio {
+	background-color: rgb(165, 72, 231);
+	cursor: pointer;
+	border-radius: 8%;
+}
+
+#navio:hover {
+	background-color: rgb(88, 47, 116);
 }
