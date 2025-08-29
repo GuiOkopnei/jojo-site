@@ -75,7 +75,7 @@ main {
 	gap: 2em;
 	float: right;
 	padding: 1em;
-	width: 25vw;
+	width: calc(12% + 180px);
 }
 
 .container-img > .img-importante {
@@ -127,4 +127,15 @@ main {
 
 #navio:hover {
 	background-color: rgb(88, 47, 116);
+}
+
+@media (max-width: 650px) {
+	.container-img {
+		width: 100%;
+		padding: 0;
+	}
+	.conteudos-textos {
+		display: flex;
+		flex-direction: column;
+	}
 }
