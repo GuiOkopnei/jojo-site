@@ -33,11 +33,12 @@ header {
 	padding: 25px;
 }
 
-aside {
-	width: 20vw;
-	height: 100vh;
+#tabela {
 	background-color: rgb(214, 186, 0);
-	position: relative;
+	width: 25%;
+	border-radius: 15px;
+	padding: 1.5em;
+	margin: 1.5em;
 }
 
 .pinto {
